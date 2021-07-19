@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:doco_app/pages/splash_page.dart';
+import 'package:doco_app/theme.dart';
 
 
 void main() {
@@ -16,8 +17,8 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        backgroundColor: darkColor,
         body: Container(
-
           child: Center(
             child: SplashPage(),
           ),

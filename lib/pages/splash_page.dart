@@ -22,9 +22,9 @@ class _SplashPageState extends State<SplashPage> {
                   margin: const EdgeInsets.only(
                     top: 100,
                   ),
-                  child: Text("Get your attendance with Doco",
+                  child: Text("Get your attendance with Taksu",
                     style: TextStyle(
-                      color: blackColor,
+                      color: cyanDarkColor,
                       fontSize: 20,
                     ),
                   )
@@ -40,7 +40,7 @@ class _SplashPageState extends State<SplashPage> {
                   child: Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis arcu gravida bibendum mauris volutpat.",
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                      color: blackColor,
+                      color: whiteColor,
                       fontSize: 16,
                     ),
                   ),
