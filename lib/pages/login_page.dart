@@ -67,7 +67,7 @@ class _LoginPageState extends State<LoginPage> {
                         ));
                   },
                   style: ElevatedButton.styleFrom(
-                    primary: cyanDarkColor,
+                    primary: grayColor,
                   ),
                   child: Text(
                     "Login with google",

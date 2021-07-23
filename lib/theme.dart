@@ -6,3 +6,4 @@ Color whiteColor=Color(0xffFFFFFF);
 Color blackColor=Color(0xff000000);
 Color cyanMainColor=Color(0xff05A7CB);
 Color darkColor=Color(0xff36393F);
+Color grayColor=Color(0xff9BA1A3);
