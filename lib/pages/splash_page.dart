@@ -29,9 +29,6 @@ class _SplashPageState extends State<SplashPage> {
                       fontSize: 20,
                     ),
                   )),
-              // SizedBox(
-              //   height: 20,
-              // ),
               Container(
                 margin: EdgeInsets.all(32),
                 padding: EdgeInsets.symmetric(
