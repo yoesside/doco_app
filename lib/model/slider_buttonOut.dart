@@ -1,5 +1,6 @@
 import 'package:doco_app/theme.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:slide_to_confirm/slide_to_confirm.dart';
 
 class SliderButtonOut extends StatelessWidget {
@@ -8,16 +9,21 @@ class SliderButtonOut extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
        child: ConfirmationSlider(
-        width: 338,
+        width: 373,
         height: 80,
         backgroundColor: grayColorSlide,
         foregroundColor: grayColorForegnSlide,
         text: "Slide to clock Out",
-        textStyle: TextStyle(
-          fontWeight: FontWeight.bold,
-          fontSize: 18,
+        textStyle: GoogleFonts.poppins(
           color: whiteColor,
+          fontSize: 18,
+
         ),
+        // textStyle: TextStyle(
+        //   fontWeight: FontWeight.bold,
+        //   fontSize: 18,
+        //   color: whiteColor,
+        // ),
         onConfirmation: (){}
         ),
     );

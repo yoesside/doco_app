@@ -65,14 +65,14 @@ class _SplashPageState extends State<SplashPage> {
                     ));
               },
               style: ElevatedButton.styleFrom(
-                primary: grayColor,
+                primary: grayColorSlide,
               ),
               child: Container(
                 margin: EdgeInsets.all(15),
                 padding: EdgeInsets.all(8),
                 width: double.infinity,
                 decoration: BoxDecoration(
-                  color: grayColor,
+                  color: grayColorSlide,
                 ),
                 child: Center(
                     child: Text("Get started",

@@ -53,7 +53,7 @@ class _LoginPageState extends State<LoginPage> {
             ),
             SizedBox(
               height: 120,
-            ),
+            ), 
             Center(
               child: Container(
                 width: 267,
@@ -67,7 +67,7 @@ class _LoginPageState extends State<LoginPage> {
                         ));
                   },
                   style: ElevatedButton.styleFrom(
-                    primary: grayColor,
+                    primary: grayColorSlide,
                   ),
                   child: Text(
                     "Login with google",

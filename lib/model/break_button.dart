@@ -1,11 +1,12 @@
 import 'package:doco_app/theme.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class BreakButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 345,
+      width: 373,
       height: 70,
       color: grayColorSlide,
       child: Row(
@@ -14,10 +15,9 @@ class BreakButton extends StatelessWidget {
             width: 30,
           ),
           Text("Start 1 Hour break",
-            style: TextStyle(
-              fontSize: 20,
+            style: GoogleFonts.poppins(
               color: whiteColor,
-              fontWeight: FontWeight.w100,
+              fontSize: 18,
             ),
           ),
           SizedBox(
