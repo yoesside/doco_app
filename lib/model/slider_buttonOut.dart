@@ -17,7 +17,6 @@ class SliderButtonOut extends StatelessWidget {
         textStyle: GoogleFonts.poppins(
           color: whiteColor,
           fontSize: 18,
-
         ),
         // textStyle: TextStyle(
         //   fontWeight: FontWeight.bold,
