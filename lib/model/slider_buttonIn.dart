@@ -4,6 +4,10 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:slide_to_confirm/slide_to_confirm.dart';
 
 class SliderButtonIn extends StatelessWidget {
+
+  void confirmed(){
+    print("Slider confirmed");
+  }
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -17,8 +21,10 @@ class SliderButtonIn extends StatelessWidget {
           color: whiteColor,
           fontSize: 18,
         ),
-        onConfirmation: (){}
-        ),
+        onConfirmation: (){
+          Navigator.of(context).pushNamed("Confirmation");
+        }
+      ),
     );
   }
 }

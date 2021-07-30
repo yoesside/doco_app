@@ -15,7 +15,7 @@ class BreakButton extends StatelessWidget {
           SizedBox(
             width: 30,
           ),
-          Text("Start 1 Hour break             ",
+          Text("    Start 1 Hour break          ",
             style: GoogleFonts.poppins(
               color: whiteColor,
               fontSize: 18,

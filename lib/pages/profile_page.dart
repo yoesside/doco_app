@@ -1,5 +1,8 @@
 import 'package:doco_app/theme.dart';
 import 'package:flutter/material.dart';
+import 'package:doco_app/pages/login_page.dart';
+import 'package:google_fonts/google_fonts.dart';
+
 
 class ProfilePage extends StatefulWidget {
   @override
@@ -20,9 +23,14 @@ class _ProfilePageState extends State<ProfilePage> {
           children: [
             Row(
               children: [
-                Image.asset("assets/images/icon_back.png",
-                  width: 40,
-                  height: 40,
+                InkWell(
+                  onTap: (){
+                    Navigator.pop(context);
+                  },
+                  child: Image.asset("assets/images/icon_back.png",
+                    width: 40,
+                    height: 40,
+                  ),
                 ),
               ],
             ),
@@ -35,15 +43,39 @@ class _ProfilePageState extends State<ProfilePage> {
                   padding: EdgeInsets.only(
                     left: 37,
                   ),
-                  child: Image.asset("assets/images/Profile.png",
-                    width: 90,
-                    height: 90,
+                  child: Image.asset("assets/images/Profile2.png",
+                    width: 70,
+                    height: 70,
                   ),
-                )
+                ),
+                SizedBox(
+                  width: 20,
+                ),
+                Column(
+                  children: [ 
+                   Text("user@taksuteknologi.com",
+                    style: GoogleFonts.poppins(
+                      fontSize: 17,
+                      color: whiteColor,
+                      ),
+                    ),
+                  Align(
+                    alignment: Alignment(-0.18, -0.75),
+                    child: Text("Yoshino Nanjo",
+                      style: GoogleFonts.poppins(
+                        fontSize: 17,
+                        color: cyanDarkColor,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  )
+                  ],
+                ),
+                
               ],
             ),
             SizedBox(
-              height: 130,
+              height: 210,
             ),
             Center(
               child: Container(
@@ -51,7 +83,11 @@ class _ProfilePageState extends State<ProfilePage> {
                 height: 44,
                 child: ElevatedButton(
                   onPressed: () {
-                    
+                     Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => LoginPage(),
+                    ));
                   },
                   style: ElevatedButton.styleFrom(
                     primary: grayColorSlide,
@@ -67,7 +103,6 @@ class _ProfilePageState extends State<ProfilePage> {
                 ),
               ),
             )
-
           ],
         ),
       )),

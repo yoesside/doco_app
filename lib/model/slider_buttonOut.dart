@@ -18,12 +18,9 @@ class SliderButtonOut extends StatelessWidget {
           color: whiteColor,
           fontSize: 18,
         ),
-        // textStyle: TextStyle(
-        //   fontWeight: FontWeight.bold,
-        //   fontSize: 18,
-        //   color: whiteColor,
-        // ),
-        onConfirmation: (){}
+        onConfirmation: (){
+          Navigator.of(context).pushNamed("Confirmation");
+        }
         ),
     );
   }

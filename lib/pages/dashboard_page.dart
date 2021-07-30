@@ -33,7 +33,7 @@ class DashboardPage extends StatelessWidget {
                   onTap: (){
                     // Navigator.pop(context)
                   },
-                  child: Image.asset("assets/images/Profile.png",
+                  child: Image.asset("assets/images/Profile2.png",
                     width: 50,
                     height: 50,
                   ),
