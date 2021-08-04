@@ -3,11 +3,19 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:slide_to_confirm/slide_to_confirm.dart';
 
-class SliderButtonIn extends StatelessWidget {
+class SliderButtonIn extends StatefulWidget {
+
+  @override
+  _SliderButtonInState createState() => _SliderButtonInState();
+}
+
+class _SliderButtonInState extends State<SliderButtonIn> {
+  String _text = "Slide to clock in";
 
   void confirmed(){
     print("Slider confirmed");
   }
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -16,13 +24,15 @@ class SliderButtonIn extends StatelessWidget {
         height: 80,
         backgroundColor: grayColorSlide,
         foregroundColor: grayColorForegnSlide,
-        text: "Slide to clock in",
+        text: _text,
         textStyle: GoogleFonts.poppins(
           color: whiteColor,
           fontSize: 18,
         ),
         onConfirmation: (){
-          Navigator.of(context).pushNamed("Confirmation");
+          setState(() {
+            _text = "Clocked in";
+          });
         }
       ),
     );

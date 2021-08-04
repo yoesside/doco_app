@@ -52,6 +52,8 @@ class _ProfilePageState extends State<ProfilePage> {
                   width: 20,
                 ),
                 Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+crossAxisAlignment: CrossAxisAlignment.start,
                   children: [ 
                    Text("user@taksuteknologi.com",
                     style: GoogleFonts.poppins(
@@ -59,16 +61,13 @@ class _ProfilePageState extends State<ProfilePage> {
                       color: whiteColor,
                       ),
                     ),
-                  Align(
-                    alignment: Alignment(-0.18, -0.75),
-                    child: Text("Yoshino Nanjo",
+                  Text("Yoshino Nanjo",
                       style: GoogleFonts.poppins(
                         fontSize: 17,
                         color: cyanDarkColor,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                  )
                   ],
                 ),
                 

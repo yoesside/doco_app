@@ -3,15 +3,18 @@ import 'package:doco_app/model/slider_buttonOut.dart';
 import 'package:doco_app/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-// import 'package:slide_to_confirm/slide_to_confirm.dart';
-import 'package:slide_to_act/slide_to_act.dart';
+import 'package:slide_to_confirm/slide_to_confirm.dart';
 import 'package:doco_app/model/slider_buttonIn.dart';
-
+import 'package:intl/intl.dart';
+import 'package:doco_app/pages/profile_page.dart';
 
 class DashboardPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    DateTime now = new DateTime.now();
+    DateTime someDate = new DateTime(2000, 5, 2);
+
     return Scaffold(
       backgroundColor: darkColor,
       body: SafeArea(
@@ -31,7 +34,11 @@ class DashboardPage extends StatelessWidget {
                 ),
                 InkWell(
                   onTap: (){
-                    // Navigator.pop(context)
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => ProfilePage(),
+                        ));
                   },
                   child: Image.asset("assets/images/Profile2.png",
                     width: 50,
@@ -42,7 +49,7 @@ class DashboardPage extends StatelessWidget {
             ),
            ),
           SizedBox(
-            height: 21,
+            height: 10,
           ),
           Container(
             
@@ -78,11 +85,22 @@ class DashboardPage extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 60,
+            height: 10,
+          ),
+          Text(
+            // NumberFormat("###.0#", "en_US").format(12.345678),
+             DateFormat('kk:mm').format(now),
+            style: GoogleFonts.poppins(
+              fontSize: 17,
+              color: whiteColor,
+            ),
+          ),
+          SizedBox(
+            height: 10,
           ),
           SliderButtonIn(),
           SizedBox(
-            height: 120,
+            height: 65,
           ),
            BreakButton(),
           // GestureDetector(
@@ -102,7 +120,7 @@ class DashboardPage extends StatelessWidget {
           //   ),
           // ),
           SizedBox(
-            height: 120,
+            height: 65,
           ),
           SliderButtonOut()
 

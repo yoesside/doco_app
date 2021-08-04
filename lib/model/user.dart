@@ -6,5 +6,6 @@ class User {
   final int clockBreak;
   final int clockOut;
 
-  User(this.email, this.fullname, this.img, this.clockIn, this.clockBreak, this.clockOut);
+  User(this.email, this.fullname, this.img, this.clockIn, this.clockBreak,
+      this.clockOut);
 }
