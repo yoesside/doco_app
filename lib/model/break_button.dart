@@ -1,10 +1,10 @@
-import 'package:doco_app/pages/profile_page.dart';
 import 'package:doco_app/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class BreakButton extends StatelessWidget {
   @override
+  String _text = "Slide to clock in";
   Widget build(BuildContext context) {
     return Container(
       width: 373,
@@ -25,11 +25,7 @@ class BreakButton extends StatelessWidget {
             child: ElevatedButton(
               child: Text("Start"),
               onPressed: () {
-                 Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => ProfilePage(),
-                        ));
+                
               },
               style: ElevatedButton.styleFrom(
                 primary: grayColorForegnSlide,

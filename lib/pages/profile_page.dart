@@ -53,7 +53,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 ),
                 Column(
                   mainAxisAlignment: MainAxisAlignment.start,
-crossAxisAlignment: CrossAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [ 
                    Text("user@taksuteknologi.com",
                     style: GoogleFonts.poppins(

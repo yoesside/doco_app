@@ -3,7 +3,6 @@ import 'package:doco_app/model/slider_buttonOut.dart';
 import 'package:doco_app/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:slide_to_confirm/slide_to_confirm.dart';
 import 'package:doco_app/model/slider_buttonIn.dart';
 import 'package:intl/intl.dart';
 import 'package:doco_app/pages/profile_page.dart';
@@ -13,7 +12,22 @@ class DashboardPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     DateTime now = new DateTime.now();
-    DateTime someDate = new DateTime(2000, 5, 2);
+
+    bool clockInPressed = true;
+    bool breakPressed = true;
+    bool clockOutPressed = true;
+
+    // void clockInPressed(){
+
+    // }
+
+    // void breakPressed(){
+
+    // }
+
+    // void clockOutPressed(){
+
+    // }
 
     return Scaffold(
       backgroundColor: darkColor,
@@ -85,7 +99,7 @@ class DashboardPage extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 10,
+            height: 20,
           ),
           Text(
             // NumberFormat("###.0#", "en_US").format(12.345678),
@@ -96,11 +110,11 @@ class DashboardPage extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 10,
+            height: 20,
           ),
           SliderButtonIn(),
           SizedBox(
-            height: 65,
+            height: 90,
           ),
            BreakButton(),
           // GestureDetector(
@@ -120,7 +134,7 @@ class DashboardPage extends StatelessWidget {
           //   ),
           // ),
           SizedBox(
-            height: 65,
+            height: 90,
           ),
           SliderButtonOut()
 
