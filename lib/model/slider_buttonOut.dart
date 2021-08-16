@@ -1,7 +1,9 @@
+import 'package:doco_app/providers/time_provider.dart';
 import 'package:doco_app/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:slide_to_confirm/slide_to_confirm.dart';
+import 'package:provider/provider.dart';
 
 class SliderButtonOut extends StatefulWidget {
   @override
@@ -32,6 +34,7 @@ class _SliderButtonOutState extends State<SliderButtonOut> {
             setState(() {
               _text = "Clocked out";
             });
+            Provider.of<TimeProvider>(context, listen: false).saveTimeAtPosition(2);
           }),
     );
   }

@@ -1,6 +1,8 @@
+import 'package:doco_app/providers/time_provider.dart';
 import 'package:doco_app/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'package:slide_to_confirm/slide_to_confirm.dart';
 
 class SliderButtonIn extends StatefulWidget {
@@ -33,6 +35,8 @@ class _SliderButtonInState extends State<SliderButtonIn> {
           setState(() {
             _text = "Clocked in";
           });
+
+        Provider.of<TimeProvider>(context, listen: false).saveTimeAtPosition(0);
         }
       ),
     );

@@ -1,33 +1,18 @@
 import 'package:doco_app/model/break_button.dart';
 import 'package:doco_app/model/slider_buttonOut.dart';
+import 'package:doco_app/providers/time_provider.dart';
 import 'package:doco_app/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:doco_app/model/slider_buttonIn.dart';
-import 'package:intl/intl.dart';
 import 'package:doco_app/pages/profile_page.dart';
+import 'package:provider/provider.dart';
 
 class DashboardPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    DateTime now = new DateTime.now();
-
-    bool clockInPressed = true;
-    bool breakPressed = true;
-    bool clockOutPressed = true;
-
-    // void clockInPressed(){
-
-    // }
-
-    // void breakPressed(){
-
-    // }
-
-    // void clockOutPressed(){
-
-    // }
+    var times = Provider.of<TimeProvider>(context).getTimes();
 
     return Scaffold(
       backgroundColor: darkColor,
@@ -103,7 +88,7 @@ class DashboardPage extends StatelessWidget {
           ),
           Text(
             // NumberFormat("###.0#", "en_US").format(12.345678),
-             DateFormat('kk:mm').format(now),
+            times[0],
             style: GoogleFonts.poppins(
               fontSize: 17,
               color: whiteColor,
@@ -116,6 +101,14 @@ class DashboardPage extends StatelessWidget {
           SizedBox(
             height: 90,
           ),
+            Text(
+              // NumberFormat("###.0#", "en_US").format(12.345678),
+              times[1],
+              style: GoogleFonts.poppins(
+                fontSize: 17,
+                color: whiteColor,
+              ),
+            ),
            BreakButton(),
           // GestureDetector(
           //   onTap: (){
@@ -135,6 +128,14 @@ class DashboardPage extends StatelessWidget {
           // ),
           SizedBox(
             height: 90,
+          ),
+          Text(
+            // NumberFormat("###.0#", "en_US").format(12.345678),
+            times[2],
+            style: GoogleFonts.poppins(
+              fontSize: 17,
+              color: whiteColor,
+            ),
           ),
           SliderButtonOut()
 

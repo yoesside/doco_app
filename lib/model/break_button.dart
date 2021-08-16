@@ -1,6 +1,9 @@
+import 'package:doco_app/providers/time_provider.dart';
 import 'package:doco_app/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
+
 
 class BreakButton extends StatelessWidget {
   @override
@@ -25,7 +28,7 @@ class BreakButton extends StatelessWidget {
             child: ElevatedButton(
               child: Text("Start"),
               onPressed: () {
-                
+                Provider.of<TimeProvider>(context, listen: false).saveTimeAtPosition(1);
               },
               style: ElevatedButton.styleFrom(
                 primary: grayColorForegnSlide,
