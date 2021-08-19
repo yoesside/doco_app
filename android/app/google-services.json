@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "756423523186",
+    "project_id": "taksuattendanceapp",
+    "storage_bucket": "taksuattendanceapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:756423523186:android:f2bda33ccc1142e23b3beb",
+        "android_client_info": {
+          "package_name": "com.example.doco_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "756423523186-4noeeh07bsgf2nriq61nc2l02jatr08c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.doco_app",
+            "certificate_hash": "49bf4f8c8055ddff59edca7cee41f6c01dd3b3b8"
+          }
+        },
+        {
+          "client_id": "756423523186-u9c3qiscddkmsij3lqkrpkimntp0a2hj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4iJ4kuM11I_YgPacCLJnelZcxWiS8AzA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "756423523186-u9c3qiscddkmsij3lqkrpkimntp0a2hj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

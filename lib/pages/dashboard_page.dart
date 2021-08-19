@@ -109,23 +109,11 @@ class DashboardPage extends StatelessWidget {
                 color: whiteColor,
               ),
             ),
+            SizedBox(
+            height: 20,
+          ),
            BreakButton(),
-          // GestureDetector(
-          //   onTap: (){
-          //     print("End");
-          //   },
-          //   child: new Container(
-          //     width: 300.0,
-          //     height: 70,
-          //     padding: new EdgeInsets.fromLTRB(20.0, 40.0, 20.0, 40.0),
-          //     color: Colors.green,
-          //     child: Column(
-          //       children: [
-          //         Text("anjir")
-          //       ],
-          //     ),
-          //   ),
-          // ),
+
           SizedBox(
             height: 90,
           ),
@@ -136,6 +124,9 @@ class DashboardPage extends StatelessWidget {
               fontSize: 17,
               color: whiteColor,
             ),
+          ),
+          SizedBox(
+            height: 20,
           ),
           SliderButtonOut()
 
