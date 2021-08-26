@@ -1,6 +1,9 @@
 import 'package:doco_app/pages/dashboard_page.dart';
 import 'package:doco_app/theme.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_signin_button/flutter_signin_button.dart';
+import 'package:flutter/cupertino.dart';
+
 
 class LoginPage extends StatefulWidget {
   @override
@@ -53,7 +56,7 @@ class _LoginPageState extends State<LoginPage> {
             ),
             SizedBox(
               height: 120,
-            ), 
+            ),
             Center(
               child: Container(
                 width: 267,
@@ -79,6 +82,16 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
               ),
+            ),
+            SizedBox(
+              height: 30,
+            ),
+            SignInButton(
+              Buttons.Google,
+              text: "Sign in with Google",
+              onPressed: () {
+                GoogleSignIn().signIn();
+              },
             )
           ]),
         ),
